@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/my-app/static/css/main.353ebd6c.css",
+    "main.js": "/my-app/static/js/main.bc88767a.js",
+    "static/js/453.8ab44547.chunk.js": "/my-app/static/js/453.8ab44547.chunk.js",
+    "static/media/herosection.jpeg": "/my-app/static/media/herosection.060c40d71b2baabb45a2.jpeg",
+    "static/media/logo.svg": "/my-app/static/media/logo.639f2971f4a26fa356fec9d389cf0d5e.svg",
+    "index.html": "/my-app/index.html",
+    "main.353ebd6c.css.map": "/my-app/static/css/main.353ebd6c.css.map",
+    "main.bc88767a.js.map": "/my-app/static/js/main.bc88767a.js.map",
+    "453.8ab44547.chunk.js.map": "/my-app/static/js/453.8ab44547.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.353ebd6c.css",
+    "static/js/main.bc88767a.js"
+  ]
+}

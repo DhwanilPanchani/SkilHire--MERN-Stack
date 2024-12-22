@@ -1,0 +1,232 @@
+.features {
+    padding: 50px 0;
+    background-color: #f1fdf7;
+  
+    &.dark {
+      background-color: #0d084d;
+      color: white;
+      
+      .container {
+        .item {
+          h1, p, .title {
+            color: white;
+          }
+        }
+      }
+    }
+  
+    .container {
+      width: 100%;
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 50px;
+  
+      @media (max-width: 1024px) {
+        flex-direction: column;
+        gap: 30px;
+      }
+  
+      .item {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+  
+        @media (max-width: 768px) {
+          text-align: center;
+          align-items: center;
+        }
+  
+        h1 {
+          font-size: 34px;
+          font-weight: 500;
+          line-height: 1.3;
+          margin-bottom: 10px;
+  
+          @media (max-width: 768px) {
+            font-size: 28px;
+          }
+  
+          i {
+            font-weight: 300;
+            font-style: italic;
+          }
+        }
+  
+        p {
+          font-size: 18px;
+          line-height: 1.5;
+          color: #666;
+          margin-bottom: 20px;
+  
+          @media (max-width: 768px) {
+            font-size: 16px;
+          }
+        }
+  
+        .title {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-size: 16px;
+          color: #666;
+  
+          @media (max-width: 768px) {
+            justify-content: center;
+          }
+  
+          img {
+            width: 24px;
+            height: 24px;
+          }
+        }
+  
+        video, img {
+          width: 100%;
+          max-width: 720px;
+          height: auto;
+          object-fit: contain;
+        }
+  
+        button {
+          background-color: #1dbf73;
+          color: white;
+          border: none;
+          padding: 15px 30px;
+          border-radius: 4px;
+          font-size: 16px;
+          cursor: pointer;
+          width: fit-content;
+          transition: all 0.3s ease;
+  
+          @media (max-width: 768px) {
+            width: 100%;
+            max-width: 300px;
+          }
+  
+          &:hover {
+            background-color: darken(#1dbf73, 10%);
+          }
+        }
+      }
+    }
+  }
+  
+  .explore {
+    padding: 50px 0;
+  
+    @media (max-width: 768px) {
+      padding: 30px 0;
+    }
+
+    .how-it-works {
+        padding: 50px 0;
+        background-color: #f9f9f9 !important;  /* Use !important to force the background color */
+      
+        .container {
+          max-width: 1400px;
+          margin: 0 auto;
+          padding: 0 20px;
+          text-align: center;
+      
+          h1 {
+            font-size: 36px;
+            margin-bottom: 40px;
+            color: #333;
+          }
+      
+          /* Force background color on accordion button */
+          .accordion .accordion-button {
+            background-color: #1dbf73 !important;  /* Apply the background color with !important */
+            color: white !important;  /* Ensure the text color remains white */
+            font-weight: bold;
+            border-radius: 4px;
+            padding: 15px;
+            transition: background-color 0.3s ease;
+            margin-top: 30px;
+      
+            &:hover {
+              background-color: #16a95c !important;  /* Darker green on hover */
+              color: white !important;  /* Ensure text remains white */
+            }
+          }
+      
+          /* Accordion body background */
+          .accordion-body {
+            background-color: #f1fdf7 !important;  /* Use !important for accordion body */
+            color: #666;
+            padding: 20px;
+            font-size: 16px;
+          }
+        }
+      }
+      
+      
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 20px;
+  
+      h1 {
+        color: #555;
+        margin-bottom: 30px;
+        text-align: center;
+        font-size: 32px;
+  
+        @media (max-width: 768px) {
+          font-size: 24px;
+        }
+      }
+  
+      .items {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        
+        @media (max-width: 768px) {
+          grid-template-columns: repeat(2, 1fr);
+        }
+  
+        @media (max-width: 480px) {
+          grid-template-columns: 1fr;
+        }
+  
+        .item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 10px;
+          padding: 20px;
+          transition: transform 0.3s ease;
+  
+          &:hover {
+            transform: translateY(-5px);
+            
+            .line {
+              width: 80px;
+              background-color: #1dbf73;
+            }
+          }
+  
+          img {
+            width: 50px;
+            height: 50px;
+          }
+  
+          .line {
+            width: 50px;
+            height: 2px;
+            background-color: lightgray;
+            transition: all 0.3s ease;
+          }
+  
+          span {
+            font-weight: 300;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }

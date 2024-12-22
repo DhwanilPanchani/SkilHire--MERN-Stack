@@ -1,0 +1,133 @@
+/* Reset and Normalize */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, blockquote {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Global Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.navbar .navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar .nav-link {
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+/* Buttons */
+button, .btn {
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover, .btn:hover {
+    background-color: #007bff;
+    color: #ffffff;
+    transform: scale(1.02);
+}
+
+/* Forms */
+input, textarea, select {
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.3rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #80bdff;
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Card Styling */
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.card h5 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.card .card-body {
+    padding: 1.5rem;
+}
+
+/* Utility Classes */
+.mt-5 {
+    margin-top: 3rem !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -0.5rem;
+}
+
+.col-md-4 {
+    flex: 0 0 calc(33.333% - 1rem);
+    margin: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .col-md-4 {
+        flex: 0 0 calc(50% - 1rem);
+    }
+}
+
+@media (max-width: 576px) {
+    .col-md-4 {
+        flex: 0 0 calc(100% - 1rem);
+    }
+}
